@@ -6,18 +6,6 @@ let carne = 15;
 let feijao = 12;
 let brigadeiro = 8;
 
-console.log(`  
-  --menu--
-  1 - Pipoca
-  2 - Macarrão
-  3 - Carne
-  4 - Feijão
-  5 - Brigadeiro
-
-`);
-let opcoes = readylineSync.question('Escolha uma opcao: ');
-let tempo = readylineSync.question('Digite o tempo desejado: ');
-
 function tempoInsuficiente(opcoes, tempo) {
   if (opcoes == 1 && tempo < pipoca) {
     return console.log('Tempo insuficiente');
@@ -25,7 +13,7 @@ function tempoInsuficiente(opcoes, tempo) {
     return console.log('Tempo insuficiente');
   } else if (opcoes == 3 && tempo < carne) {
     return console.log('Tempo insuficiente');
-  } else if ((opcoes = 4 && tempo < feijao)) {
+  } else if (opcoes == 4 && tempo < feijao) {
     return console.log('Tempo insuficiente');
   } else if (opcoes == 5 && tempo < brigadeiro) {
     return console.log('Tempo insuficiente');
@@ -61,7 +49,7 @@ function Kaboon(opcoes, tempo) {
 }
 
 function opcaoNaoListada(opcoes) {
-  if (opcoes < 1 || opcoes > 5) {
+  if (opcoes == 0 || opcoes > 5) {
     return console.log('Opção Inexistente!!');
   }
 }
@@ -78,6 +66,18 @@ function imprimirResultado(opcoes, tempo) {
   }
   return console.log('Prato Pronto, Bom apetite');
 }
+
+console.log(`  
+  --menu--
+  1 - Pipoca
+  2 - Macarrão
+  3 - Carne
+  4 - Feijão
+  5 - Brigadeiro
+
+`);
+let opcoes = readylineSync.question('Escolha uma opcao: ');
+let tempo = readylineSync.question('Digite o tempo desejado: ');
 
 imprimirResultado(opcoes, tempo);
 
