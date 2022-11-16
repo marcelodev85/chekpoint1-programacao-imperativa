@@ -1,0 +1,23 @@
+{
+  "name": "checkpoint1-programacao-imperativa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelodev85/chekpoint1-programacao-imperativa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelodev85/chekpoint1-programacao-imperativa/issues"
+  },
+  "homepage": "https://github.com/marcelodev85/chekpoint1-programacao-imperativa#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
